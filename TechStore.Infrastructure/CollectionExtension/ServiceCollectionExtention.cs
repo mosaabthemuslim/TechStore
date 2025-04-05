@@ -16,6 +16,7 @@ public static class ServiceCollectionExtention
         services.AddDbContext<TechStoreDBContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("TechStore")));
 
+
         return services;
     }
 }
